@@ -68,3 +68,20 @@ export interface NavbarIconConfig {
     /** Tamaño del icono en unidades `rem` */
     size: number;
 }
+
+/**
+ * Configuración del Profile Header.
+ */
+export interface ProfileHeaderConfig {
+  /** Nombre del usuario a mostrar */
+  userName: string;
+
+  /** Rol o cargo del usuario */
+  userRole: string;
+
+  /** Url de la imagen de avatar */
+  avatarUrl: string;
+
+  /** Texto placeholder para el campo de búsqueda */
+  searchPlaceholder: string;
+}
