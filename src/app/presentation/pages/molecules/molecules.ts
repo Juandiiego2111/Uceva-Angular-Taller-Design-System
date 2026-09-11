@@ -6,6 +6,8 @@ import {
   NavLink,
   NavLinkMolecule,
   SearchInputMolecule,
+  UserCardData,
+  UserCardMolecule,
 } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
@@ -15,6 +17,7 @@ import {
     ButtonGroupMolecule,
     NavLinkMolecule,
     SearchInputMolecule,
+    UserCardMolecule,
   ],
 })
 export class Molecules {
@@ -44,4 +47,10 @@ export class Molecules {
   onSearch(value: string): void {
     this.searchValue = value;
   }
+
+  userCardData: UserCardData = {
+    userName: 'Carlos Ruiz',
+    userRole: 'Desarrollador Full Stack',
+    avatarUrl: 'https://i.pravatar.cc/150?u=carlosruiz',
+  };
 }
