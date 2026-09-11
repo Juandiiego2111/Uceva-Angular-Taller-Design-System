@@ -8,6 +8,8 @@ import {
   ButtonType,
   ContainerAtom,
   IconAtom,
+  TagAtom,
+  TagType,
 } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
@@ -17,6 +19,7 @@ import {
     ButtonAtom,
     IconAtom,
     ContainerAtom,
+    TagAtom,
     CommonModule,
   ],
 })
@@ -54,5 +57,12 @@ export class Atoms {
   onClick(idButton: string){
     alert(`Click en el Boton ${idButton}`);
   }
+
+  tags: { text: string, type: TagType, outline: boolean }[] = [
+    { text: 'Frontend', type: 'primary', outline: false },
+    { text: 'Backend', type: 'success', outline: false },
+    { text: 'Urgente', type: 'danger', outline: false },
+    { text: 'Archivado', type: 'secondary', outline: true },
+  ];
 
 }
