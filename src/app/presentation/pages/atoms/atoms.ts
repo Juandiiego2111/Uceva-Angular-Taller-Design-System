@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import {
+  AvatarAtom,
+  AvatarSize,
   BadgeAtom,
   BadgeType,
   BadgeTypeText,
@@ -15,6 +17,7 @@ import {
 @Component({
   templateUrl: './atoms.html',
   imports: [
+    AvatarAtom,
     BadgeAtom,
     ButtonAtom,
     IconAtom,
@@ -63,6 +66,12 @@ export class Atoms {
     { text: 'Backend', type: 'success', outline: false },
     { text: 'Urgente', type: 'danger', outline: false },
     { text: 'Archivado', type: 'secondary', outline: true },
+  ];
+
+  avatars: { name: string, imageUrl: string, size: AvatarSize }[] = [
+    { name: 'Juan Pérez', imageUrl: 'https://example.com/avatar.jpg', size: 'md' },
+    { name: 'María García', imageUrl: '', size: 'md' },
+    { name: 'Carlos López', imageUrl: 'https://example.com/avatar2.jpg', size: 'lg' },
   ];
 
 }

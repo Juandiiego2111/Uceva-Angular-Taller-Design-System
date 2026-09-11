@@ -71,3 +71,6 @@ export interface NavbarIconConfig {
     /** Tamaño del icono en unidades `rem` */
     size: number;
 }
+
+/** Tamaños disponibles para el componente Avatar. */
+export type AvatarSize = 'sm' | 'md' | 'lg';
