@@ -74,3 +74,17 @@ export interface NavbarIconConfig {
 
 /** Tamaños disponibles para el componente Avatar. */
 export type AvatarSize = 'sm' | 'md' | 'lg';
+
+/**
+ * Datos del usuario para el componente UserCard.
+ */
+export interface UserCardData {
+  /** Nombre del usuario a mostrar */
+  userName: string;
+
+  /** Rol o cargo del usuario */
+  userRole: string;
+
+  /** Url de la imagen de avatar del usuario */
+  avatarUrl: string;
+}
