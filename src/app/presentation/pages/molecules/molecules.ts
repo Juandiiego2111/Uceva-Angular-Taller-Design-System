@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { 
-  ButtonGroupData, 
-  ButtonGroupMolecule, 
-  ContainerAtom, 
-  NavLink, 
-  NavLinkMolecule 
+import {
+  ButtonGroupData,
+  ButtonGroupMolecule,
+  ContainerAtom,
+  NavLink,
+  NavLinkMolecule,
+  SearchInputMolecule,
 } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
@@ -13,6 +14,7 @@ import {
     ContainerAtom,
     ButtonGroupMolecule,
     NavLinkMolecule,
+    SearchInputMolecule,
   ],
 })
 export class Molecules {
@@ -35,5 +37,11 @@ export class Molecules {
 
   onClick(idButton: string){
     alert(`Click en el Boton de Grupo ${idButton}`);
+  }
+
+  searchValue: string = '';
+
+  onSearch(value: string): void {
+    this.searchValue = value;
   }
 }
