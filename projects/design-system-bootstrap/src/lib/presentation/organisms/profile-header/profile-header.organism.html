@@ -1,1 +1,15 @@
-<p>profile-header.organism works!</p>
+@if (profileHeaderConfig) {
+  <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+    <dsb-user-card-molecule
+      [userCardData]="{
+        userName: profileHeaderConfig.userName,
+        userRole: profileHeaderConfig.userRole,
+        avatarUrl: profileHeaderConfig.avatarUrl
+      }">
+    </dsb-user-card-molecule>
+    <dsb-search-input-molecule
+      [placeholder]="profileHeaderConfig.searchPlaceholder"
+      (search)="onSearch($event)">
+    </dsb-search-input-molecule>
+  </div>
+}
