@@ -21,3 +21,4 @@ export { UserCardMolecule } from './lib/presentation/molecules/user-card/user-ca
 
 //Organisms
 export { NavbarOrganism } from './lib/presentation/organisms/navbar/navbar.organism';
+export { ProfileHeaderOrganism } from './lib/presentation/organisms/profile-header/profile-header.organism';
