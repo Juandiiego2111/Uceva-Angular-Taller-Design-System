@@ -80,4 +80,9 @@ describe('AvatarAtom', () => {
     const span = fixture.debugElement.query(By.css('span'));
     expect(span.nativeElement.className).toContain('avatar-sm');
   });
+
+  it('debería devolver avatar-md para tamaños no válidos (rama default)', () => {
+    component.size = 'xl' as AvatarSize;
+    expect(component.getSizeClass()).toBe('avatar-md');
+  });
 });
