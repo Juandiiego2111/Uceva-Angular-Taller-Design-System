@@ -69,9 +69,9 @@ export class Atoms {
   ];
 
   avatars: { name: string, imageUrl: string, size: AvatarSize }[] = [
-    { name: 'Juan Pérez', imageUrl: 'https://example.com/avatar.jpg', size: 'md' },
+    { name: 'Juan Pérez', imageUrl: 'https://i.pravatar.cc/150?img=1', size: 'md' },
     { name: 'María García', imageUrl: '', size: 'md' },
-    { name: 'Carlos López', imageUrl: 'https://example.com/avatar2.jpg', size: 'lg' },
+    { name: 'Carlos López', imageUrl: 'https://i.pravatar.cc/150?img=2', size: 'lg' },
   ];
 
 }
