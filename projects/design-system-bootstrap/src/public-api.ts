@@ -17,3 +17,4 @@ export { ButtonGroupMolecule } from './lib/presentation/molecules/button-group/b
 
 //Organisms
 export { NavbarOrganism } from './lib/presentation/organisms/navbar/navbar.organism';
+export { ProfileHeaderOrganism } from './lib/presentation/organisms/profile-header/profile-header.organism';
