@@ -9,3 +9,15 @@
     <dsb-nav-link-molecule [navLinks]="navLinks">
     </dsb-nav-link-molecule>
 </dsb-container-atom>
+
+<dsb-container-atom title="Search Input" >
+    <dsb-search-input-molecule
+        placeholder="Buscar productos..."
+        [value]="searchValue"
+        (search)="onSearch($event)">
+    </dsb-search-input-molecule>
+</dsb-container-atom>
+
+<dsb-container-atom title="User Card" >
+    <dsb-user-card-molecule [userCardData]="userCardData"></dsb-user-card-molecule>
+</dsb-container-atom>

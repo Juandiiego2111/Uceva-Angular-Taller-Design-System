@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import {
+  AvatarAtom,
+  AvatarSize,
   BadgeAtom,
   BadgeType,
   BadgeTypeText,
@@ -8,15 +10,19 @@ import {
   ButtonType,
   ContainerAtom,
   IconAtom,
+  TagAtom,
+  TagType,
 } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
   templateUrl: './atoms.html',
   imports: [
+    AvatarAtom,
     BadgeAtom,
     ButtonAtom,
     IconAtom,
     ContainerAtom,
+    TagAtom,
     CommonModule,
   ],
 })
@@ -54,5 +60,18 @@ export class Atoms {
   onClick(idButton: string){
     alert(`Click en el Boton ${idButton}`);
   }
+
+  tags: { text: string, type: TagType, outline: boolean }[] = [
+    { text: 'Frontend', type: 'primary', outline: false },
+    { text: 'Backend', type: 'success', outline: false },
+    { text: 'Urgente', type: 'danger', outline: false },
+    { text: 'Archivado', type: 'secondary', outline: true },
+  ];
+
+  avatars: { name: string, imageUrl: string, size: AvatarSize }[] = [
+    { name: 'Juan Pérez', imageUrl: 'https://i.pravatar.cc/150?img=1', size: 'md' },
+    { name: 'María García', imageUrl: '', size: 'md' },
+    { name: 'Carlos López', imageUrl: 'https://i.pravatar.cc/150?img=2', size: 'lg' },
+  ];
 
 }

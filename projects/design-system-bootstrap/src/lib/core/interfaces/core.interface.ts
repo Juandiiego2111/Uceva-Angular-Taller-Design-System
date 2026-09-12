@@ -14,6 +14,9 @@ export type Themes =
 /** Tipo de tema para badges */
 export type BadgeType = Themes;
 
+/** Tipo de tema para tags */
+export type TagType = Themes;
+
 /** Clases de texto disponibles para badges */
 export type BadgeTypeText = 'text-white' | 'text-dark';
 
@@ -67,6 +70,23 @@ export interface NavbarIconConfig {
 
     /** Tamaño del icono en unidades `rem` */
     size: number;
+}
+
+/** Tamaños disponibles para el componente Avatar. */
+export type AvatarSize = 'sm' | 'md' | 'lg';
+
+/**
+ * Datos del usuario para el componente UserCard.
+ */
+export interface UserCardData {
+  /** Nombre del usuario a mostrar */
+  userName: string;
+
+  /** Rol o cargo del usuario */
+  userRole: string;
+
+  /** Url de la imagen de avatar del usuario */
+  avatarUrl: string;
 }
 
 /**

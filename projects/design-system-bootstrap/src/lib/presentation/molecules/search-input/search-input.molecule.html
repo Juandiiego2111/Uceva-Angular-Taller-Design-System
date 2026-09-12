@@ -1,0 +1,12 @@
+<div class="input-group">
+  <span class="input-group-text">
+    <dsb-icon-atom icon="search"></dsb-icon-atom>
+  </span>
+  <input
+    type="text"
+    name="search"
+    class="form-control"
+    [placeholder]="placeholder"
+    [value]="value"
+    (input)="onInputChange($any($event.target).value)" />
+</div>

@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import { 
-  ButtonGroupData, 
-  ButtonGroupMolecule, 
-  ContainerAtom, 
-  NavLink, 
-  NavLinkMolecule 
+import {
+  ButtonGroupData,
+  ButtonGroupMolecule,
+  ContainerAtom,
+  NavLink,
+  NavLinkMolecule,
+  SearchInputMolecule,
+  UserCardData,
+  UserCardMolecule,
 } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
@@ -13,6 +16,8 @@ import {
     ContainerAtom,
     ButtonGroupMolecule,
     NavLinkMolecule,
+    SearchInputMolecule,
+    UserCardMolecule,
   ],
 })
 export class Molecules {
@@ -36,4 +41,16 @@ export class Molecules {
   onClick(idButton: string){
     alert(`Click en el Boton de Grupo ${idButton}`);
   }
+
+  searchValue: string = '';
+
+  onSearch(value: string): void {
+    this.searchValue = value;
+  }
+
+  userCardData: UserCardData = {
+    userName: 'Carlos Ruiz',
+    userRole: 'Desarrollador Full Stack',
+    avatarUrl: 'https://i.pravatar.cc/150?u=carlosruiz',
+  };
 }
